@@ -11,13 +11,17 @@ Monorepo application with:
 - Prisma
 - SQLite
 
-Первый запуск:
-1) cp apps/api/.env.example apps/api/.env &&
-2) npm install &&
-3) cd apps/api &&
-4) npx prisma migrate dev &&
-5) cd ../.. &&
-6) npm run dev
+Первый запуск(одна команда):
+cp apps/api/.env.example apps/api/.env &&
+npm install &&
+cd apps/web &&
+npm install &&
+cd ../api &&
+npm install &&
+npx prisma generate &&
+npx prisma migrate dev &&
+cd ../.. &&
+npm run dev
 
 Дальше просто npm run dev для запуска
 
