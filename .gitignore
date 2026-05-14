@@ -1,0 +1,31 @@
+# dependencies
+node_modules/
+apps/*/node_modules/
+
+# build
+dist/
+apps/*/dist/
+apps/web/build/
+apps/web/.vite/
+
+# env
+.env
+.env.*
+!.env.example
+
+# prisma sqlite db
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

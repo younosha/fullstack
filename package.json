@@ -1,0 +1,12 @@
+{
+  "name": "my-fullstack-app",
+  "private": true,
+  "scripts": {
+    "dev:web": "npm run dev --prefix apps/web",
+    "dev:api": "npm run start:dev --prefix apps/api",
+    "dev": "concurrently \"npm run dev:web\" \"npm run dev:api\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
